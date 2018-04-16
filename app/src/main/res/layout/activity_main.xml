@@ -6,10 +6,29 @@
     android:layout_height="match_parent"
     tools:context="com.xiaweizi.templatesdemo.MainActivity">
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listViewAdapter"
+        android:text="ListViewAdapter"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/recycler_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="recyclerViewAdapter"
+        android:text="ReycyclerViewAdapter"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/list_view" />
 
 
 </android.support.constraint.ConstraintLayout>
