@@ -84,7 +84,7 @@ public class ListViewAdapter extends BaseAdapter {
     static class ViewHolder {
         private TextView content;
 
-        public ViewHolder(View itemView) {
+        ViewHolder(View itemView) {
             content = itemView.findViewById(R.id.tv_content);
         }
 
